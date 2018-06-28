@@ -1,0 +1,147 @@
+body {
+  font-family: 'Source Sans Pro';;
+}
+
+.section {
+  max-width: 100%;
+
+  padding: 0 158px;
+
+  .section-content {
+    max-width: 1440px;
+    margin: auto;
+    padding-top: 132px;
+    padding-bottom: 132px;
+  }
+
+  a {
+    color: #283444;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 50px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.98;
+    letter-spacing: normal;
+    text-align: left;
+    color: #283444;
+  }
+
+  h2 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: -0.5px;
+    text-align: left;
+    color: #283444;
+  }
+
+  .h3 {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: normal;
+    text-align: left;
+    color: #283444;
+  }
+
+  h6 {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.33;
+    letter-spacing: 0.5px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #1eb8ff;
+  }
+
+  p, li {
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #3c4c57;
+  }
+
+  p {
+    max-width: 435px;
+  }
+
+  li {
+    max-width: 400px;
+  }
+}
+
+.two-cols {
+  display: flex;
+
+  .left {
+    flex: 1 1 50%;
+    //padding-left: 158px;
+
+  }
+
+  .right {
+    flex: 1 1 50%;
+    //padding-right: 158px;
+  }
+}
+
+// FIMXE TO REMOVE
+.background {
+  position: absolute;
+  height: 100%;
+  max-width: 100%;
+
+  .background-1st {
+    height: 350px;
+
+    position: absolute;
+    z-index: -10;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    transform: skewY(-6deg);
+    background: linear-gradient(45deg, rgba(65, 200, 240, 0.9) 0%, rgba(30, 80, 225, 0.9) 100%);
+  }
+
+  .background-2nd {
+    position: absolute;
+    z-index: 0;
+    bottom: -100px;
+    left: 0;
+    width: 100%;
+    height: 1000px;
+    transform: skewY(-6deg);
+  }
+
+  .background-3rd {
+    opacity: 0.5;
+    position: absolute;
+    z-index: -20;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+  }
+}
+
+.corner-top-left-bevel {
+  //border-style: solid;
+  //border-color: blue transparent red transparent;
+  //border-width: 0 0 100vw 50vw;
+
+  //border-left: 20vw solid white;
+  //border-top: 5vw solid transparent;
+  //border-bottom: 5vw solid transparent;
+}

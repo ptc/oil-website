@@ -1,0 +1,39 @@
+.collaboration {
+  margin-top: -80px;
+
+  .collaboration-image {
+    display: block;
+    margin: auto;
+    margin-bottom: 200px;
+
+    border-radius: 20px;
+    box-shadow: 0 16px 25px 0 rgba(0, 0, 0, 0.03);
+    background-color: #fcfcfc;
+    border: solid 0.8px #e0e8ed;
+  }
+
+  .some-image {
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.05);
+  }
+
+  p {
+    max-width: 320px;
+  }
+
+  .divider {
+    width: 312px;
+    height: 2px;
+    border-bottom: solid 1px #e0e8ed;
+  }
+
+  .collaboration-left {
+
+  }
+
+  .collaboration-right {
+
+  }
+}
+

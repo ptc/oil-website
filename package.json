@@ -3,7 +3,7 @@
   "description": "OIL website",
   "license": "MIT",
   "scripts": {
-    "develop": "gatsby develop",
+    "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve"
   },
@@ -11,6 +11,9 @@
     "gatsby": "^1.9.250",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-sass": "^1.0.26",
-    "node-sass": "^4.9.0"
+    "gatsby-source-filesystem": "^1.5.39",
+    "gatsby-transformer-remark": "^1.7.44",
+    "node-sass": "^4.9.0",
+    "normalize.css": "^8.0.0"
   }
 }

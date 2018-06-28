@@ -1,33 +1,84 @@
 .header {
-    color: red;
+  max-width: 1440px;
+  margin: auto;
 
-    &-logo {
+  .header-content {
+    height: 50px;
 
-        &__image {
-            img {
-                width: 37px;
-            }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: 'Source Code Pro';
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+
+    .header-logo {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      &__image {
+        display: inline-block;
+        img {
+          width: 24px;
         }
-        &__text {
-            font-family: 'SourceCodePro';
-            font-weight: 600;
-            color: #3c4c57;
-        }
+      }
+
+      &__text {
+        display: inline-block;
+
+        color: #3c4c57;
+
+        font-size: 14px;
+        font-family: 'Source Code Pro';
+        font-weight: 600;
+        padding-left: 12px;
+      }
     }
 
-    &-menu {
+    .header-menu {
 
-        .menu-button  {
-            width: 123px;
-            height: 30px;
-            text-align: center;
-            border-radius: 4px;
-            border: solid 1px #c0cbda;
+      a {
+        font-family: 'Source Code Pro';
+        font-size: 14px;
+        letter-spacing: normal;
+        color: #283444;
+      }
 
-            &.blue-design {
-                border-color: #8bd9ff;
-            }
+      .menu-entry {
+        display: inline-block;
+        text-decoration: none;
+
+        padding-right: 38px;
+      }
+
+      .menu-button {
+        display: inline-block;
+        text-decoration: none;
+
+        width: 124px;
+        height: 30px;
+        line-height: 28px;
+
+        text-align: center;
+        border-radius: 4px;
+        border: solid 1px #c0cbda;
+
+        &.blue-design {
+          border-color: #8bd9ff;
+          margin-right: 15px;
         }
-
+      }
     }
+  }
+
+  .header__divider {
+    margin: 0 2px;
+    border: solid 1px #e0e8ed;
+  }
 }
