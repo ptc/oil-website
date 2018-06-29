@@ -4,11 +4,11 @@ let compression = require('compression');
 let app = express();
 
 app.use(compression());
-app.use(express.static(__dirname + '/dist'));
+app.use(express.static(__dirname + '/public'));
 
 
 app.get('*', (req, res) => {
-    res.sendFile(__dirname + '/dist/index.html');
+    res.sendFile(__dirname + '/public/index.html');
 });
 
 app.listen(port, function () {
