@@ -2,13 +2,19 @@ $breakpoint-phone: 460px;
 $breakpoint-desktop: 1440px;
 
 @mixin breakpoint-s {
-    @media only screen and (max-width: $breakpoint-phone) {
-        @content;
-    }
+  @media only screen and (max-width: $breakpoint-phone) {
+    @content;
+  }
+}
+
+@mixin breakpoint-only-m {
+  @media only screen and (min-width: $breakpoint-phone) and (max-width: $breakpoint-desktop) {
+    @content;
+  }
 }
 
 @mixin breakpoint-l {
-    @media only screen and (min-width: $breakpoint-desktop) {
-        @content;
-    }
+  @media only screen and (min-width: $breakpoint-desktop) {
+    @content;
+  }
 }

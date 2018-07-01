@@ -15,17 +15,35 @@
     padding: 62px 0;
     display: flex;
 
+    h3, .footer__link {
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 1.5;
+      text-decoration: none;
+      color: #283444;
+    }
+
     ul {
       list-style: none;
       list-style-type: none;
       padding: 0;
+
+      li {
+        margin: 4px 0;
+      }
     }
 
     .footer-col__1 {
       flex: 2 1 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       img {
-        width: 200px;
+        opacity: 0.8;
+        max-width: 140px;
+        width: 100%;
+        height: auto;
       }
     }
 

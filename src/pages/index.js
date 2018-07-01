@@ -9,11 +9,13 @@ import Product from '../layout/product/product';
 import Features from '../layout/features/features';
 import Faq from '../layout/faq/faq';
 import Collaboration from '../layout/collaboration/collaboration';
-import Support from '../layout/support/support';
 import AboutUs from '../layout/aboutus/aboutus';
 import Press from '../layout/press/press';
 
 export default ({data}) => {
+
+  console.info('###', JSON.stringify(data.faq));
+
   return <div>
     <Header/>
 
@@ -21,10 +23,9 @@ export default ({data}) => {
     <Product/>
     <Features/>
     <Collaboration/>
-    <Faq entries={data.allMarkdownRemark.edges}/>
-    <Support/>
+    <Faq entries={data.faq.edges}/>
     <AboutUs/>
-    <Press/>
+    <Press entries={data.press.edges}/>
 
     <Footer/>
   </div>
@@ -32,7 +33,25 @@ export default ({data}) => {
 
 export const pageQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___title] }) {
+    faq: allMarkdownRemark(
+     filter: { fileAbsolutePath: {regex : "\\/faq/"} },
+     sort: { order: DESC, fields: [frontmatter___title] },
+    ) {
+      edges {
+        node {
+          id
+          excerpt(pruneLength: 250)
+          html
+          frontmatter {
+            title
+          }
+        }
+      }
+    }
+    press: allMarkdownRemark(
+       filter: { fileAbsolutePath: {regex : "\\/press/"} },
+       sort: { order: DESC, fields: [frontmatter___title] },
+      ) {
       edges {
         node {
           id

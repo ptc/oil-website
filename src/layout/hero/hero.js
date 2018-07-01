@@ -14,18 +14,20 @@ class Hero extends React.Component {
   render() {
     return (
       <div className="hero section">
-        <div className="hero-content section-content two-cols">
-          <div className="hero-left left">
-            <h1>OIL - fuel for your consent management.</h1>
-            <p>OIL is a holistic consent management platform that enables your compliance with GDPR and ePrivacy.
-              It is open-source, based on the IAB TCF Standard and is currently being developed by a collaboration of international publishers. </p>
+        <div className="hero-content section-content">
+          <div className="two-cols">
+            <div className="hero-left left">
+              <h1>OIL - fuel for your consent management.</h1>
+              <p>OIL is a holistic consent management platform that enables your compliance with GDPR and ePrivacy.
+                It is open-source, based on the IAB TCF Standard and is currently being developed by a collaboration of international publishers. </p>
 
-            <HeroButton text="Sandbox" cssClass="light-blue-design"/>
-            <HeroButton text="Github" cssClass="dark-blue-design"/>
-            <CollaborateLink/>
-          </div>
-          <div className="hero-right right">
-            <img src={require('./mutli-devices.png')}/>
+              <HeroButton text="Sandbox" cssClass="light-blue-design"/>
+              <HeroButton text="Github" cssClass="dark-blue-design"/>
+              <CollaborateLink/>
+            </div>
+            <div className="hero-right right">
+              <img src={require('./mutli-devices.png')}/>
+            </div>
           </div>
         </div>
       </div>

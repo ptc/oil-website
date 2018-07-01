@@ -5,7 +5,7 @@ require('./footer.scss');
 class Footer extends React.Component {
   render() {
     return (
-      <div className="footer">
+      <div className="footer section">
         <div className="footer-content">
           <div className="footer-col__1">
             <img src={require('../header/logo.svg')}/>
@@ -32,8 +32,8 @@ class Footer extends React.Component {
           <div className="footer-col__4">
             <h3>Contact</h3>
             <ul>
-              <li>Axel Springer Ideas Engineering GmbH</li>
-              <li>Axel-Springer-Str. 65, 10888 Berlin</li>
+              <li>Axel Springer SE</li>
+              <li>Axel-Springer-Str. 65,<br/> 10888 Berlin</li>
               <li>+49-30-259178100</li>
               <li><a href="mailto:hello@asideas.de" className="footer__link">hello@asideas.de</a></li>
               <li><a href="/imprint" className="footer__link">Impressum &amp; Privacy Policy</a></li>

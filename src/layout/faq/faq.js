@@ -9,7 +9,6 @@ class FaqEntry extends React.Component {
   }
 
   toggle() {
-    console.info("ASDF!!!");
     this.setState({expanded: !this.state.expanded});
   }
 
@@ -32,14 +31,14 @@ class FaqEntry extends React.Component {
 class Faq extends React.Component {
 
   render() {
-
-
     return (
       <div className="faq section">
         <div className="faq-content section-content">
           <div className="faq-titles">
             <h6>SUPPORT</h6>
             <h2>Frequently Asked Questions</h2>
+            <p>Want to know more about OIL before becoming an active collaborator?<br/>
+              In that case, please sign up to our weekly webinar!</p>
           </div>
           {this.props.entries.map(edge => <FaqEntry key={edge.node.id} post={edge.node}/>)}
         </div>

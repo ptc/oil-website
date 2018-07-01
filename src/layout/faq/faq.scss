@@ -5,8 +5,15 @@
     margin: auto;
 
     .faq-titles {
-      h2, h6 {
+      p, h2, h6 {
+        margin: auto;
         text-align: center;
+      }
+
+      p {
+        max-width: initial;
+        padding: 15px;
+        margin-bottom: 15px;
       }
     }
   }

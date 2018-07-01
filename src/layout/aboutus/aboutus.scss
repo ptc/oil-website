@@ -1,3 +1,33 @@
-.faq {
+.aboutus {
+
+  color: #1EB8FF;
+
+  p.aboutus__description {
+    max-width: 550px;
+    margin-bottom: 40px;
+  }
+
+  p.aboutus__citation {
+    max-width: 335px;
+    color: #1eb8ff;
+
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+  }
+
+  .aboutus-left {
+    display: flex;
+    justify-content: flex-end;
+    .aboutus__citation {
+      //margin-top: 80px;
+    }
+  }
+
+  .aboutus-right {
+    .aboutus__citation {
+      padding-left: 12%;
+    }
+  }
 
 }

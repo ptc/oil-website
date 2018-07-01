@@ -1,6 +1,43 @@
 .press {
+  height: 715px;
+  padding-top: 150px;
+  margin-bottom: -150px;
 
   background: url('../bg.svg') no-repeat center center;
   background-size: cover;
 
+  .press-content {
+    max-width: 832px;
+    margin: auto;
+  }
+
+  .press-entry {
+    padding: 15px;
+    border-top: solid 1px #e0e8ed;
+
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .press-entry__text {
+      flex: 1 1 auto;
+      display: inline-block;
+
+      p {
+        width: auto;
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+    .press-entry__arrow {
+      flex: 0 0 20px;
+      display: inline-block;
+    }
+  }
 }
