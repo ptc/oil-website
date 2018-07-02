@@ -14,8 +14,6 @@ import Press from '../layout/press/press';
 
 export default ({data}) => {
 
-  console.info('###', JSON.stringify(data.faq));
-
   return <div>
     <Header/>
 

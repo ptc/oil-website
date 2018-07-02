@@ -6,6 +6,10 @@
   background: url('../bg.svg') no-repeat center center;
   background-size: cover;
 
+  .features__headlines {
+    padding: 0;
+  }
+
   .features-content {
     display: flex;
     flex-wrap: wrap;

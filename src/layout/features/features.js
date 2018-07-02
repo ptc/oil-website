@@ -18,9 +18,10 @@ class Features extends React.Component {
   render() {
     return (
       <div className="features section">
-        <h6>FEATURES</h6>
-        <h2>OIL Features</h2>
-
+        <div className="features__headlines section-content">
+          <h6>FEATURES</h6>
+          <h2>OIL Features</h2>
+        </div>
         <div className="features-content section-content">
           <FeatureBox title="High performance / Low latency">
             Optimized to ensure maximum performance. Every millisecond counts.
