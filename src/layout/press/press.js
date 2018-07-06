@@ -13,7 +13,7 @@ const PressEntry = (props) => {
 class Press extends React.Component {
   render() {
     return (
-      <div className="press section grey-background">
+      <div id="press" className="press section grey-background">
         <div className="press-content section-content">
           <div className="press-titles">
             <h2>Press</h2>

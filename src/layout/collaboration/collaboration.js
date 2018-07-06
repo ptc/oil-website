@@ -7,7 +7,7 @@ require('./collaboration.scss');
 class Collaboration extends React.Component {
   render() {
     return (
-      <div className="collaboration section">
+      <div id="collaboration" className="collaboration section">
         <div className="collaboration-image__containter">
         <img className="collaboration-image" src="http://placehold.it/1125x652"/>
         </div>

@@ -6,7 +6,7 @@ require('./support.scss');
 class Support extends React.Component {
   render() {
     return (
-      <div className="support section">
+      <div id="support" className="support section">
         <div className="support__titles section-content">
           <h6>SUPPORT</h6>
           <h2>Contact & Additional Information</h2>

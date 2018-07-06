@@ -6,7 +6,7 @@ require('./aboutus.scss');
 class AboutUs extends React.Component {
   render() {
     return (
-      <div className="aboutus section">
+      <div id="aboutus" className="aboutus section">
         <div className="aboutus-content section-content">
           <h2>About us</h2>
           <p className="aboutus__description">

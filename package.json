@@ -15,6 +15,7 @@
     "gatsby-source-filesystem": "^1.5.39",
     "gatsby-transformer-remark": "^1.7.44",
     "node-sass": "^4.9.0",
-    "normalize.css": "^8.0.0"
+    "normalize.css": "^8.0.0",
+    "smoothscroll-polyfill": "^0.4.3"
   }
 }

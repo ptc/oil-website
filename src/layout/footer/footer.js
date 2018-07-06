@@ -5,7 +5,7 @@ require('./footer.scss');
 class Footer extends React.Component {
   render() {
     return (
-      <div className="footer section">
+      <div id="footer" className="footer section">
         <div className="footer-content">
           <div className="footer-col__1">
             <img src={require('../header/logo.svg')}/>

@@ -7,7 +7,7 @@ require('./product.scss');
 class Product extends React.Component {
   render() {
     return (
-      <div className="product section">
+      <div id="product" className="product section">
         <div className="product-content section-content">
           <div className="two-cols">
             <div className="product-left left">

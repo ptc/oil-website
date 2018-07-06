@@ -17,7 +17,7 @@ const FeatureBox = (props) => {
 class Features extends React.Component {
   render() {
     return (
-      <div className="features section grey-background">
+      <div id="features" className="features section grey-background">
         <div className="features__headlines section-content">
           <h6>FEATURES</h6>
           <h2>OIL Features</h2>

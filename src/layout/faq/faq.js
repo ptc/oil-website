@@ -32,7 +32,7 @@ class Faq extends React.Component {
 
   render() {
     return (
-      <div className="faq section">
+      <div id="faq" className="faq section">
         <div className="faq-content section-content">
           <div className="faq-titles">
             <h6>SUPPORT</h6>
