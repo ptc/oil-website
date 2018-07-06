@@ -11,6 +11,7 @@ import Faq from '../layout/faq/faq';
 import Collaboration from '../layout/collaboration/collaboration';
 import AboutUs from '../layout/aboutus/aboutus';
 import Press from '../layout/press/press';
+import Support from "../layout/support/support";
 
 export default ({data}) => {
 
@@ -21,6 +22,7 @@ export default ({data}) => {
     <Product/>
     <Features/>
     <Collaboration/>
+    <Support/>
     <Faq entries={data.faq.edges}/>
     <AboutUs/>
     <Press entries={data.press.edges}/>

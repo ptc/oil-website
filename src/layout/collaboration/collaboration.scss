@@ -1,21 +1,29 @@
+@import '../variables';
+
 .collaboration {
   margin-top: -80px;
 
-  .collaboration-image {
-    display: block;
-    margin: auto;
-    margin-bottom: 200px;
-
-    border-radius: 20px;
-    box-shadow: 0 16px 25px 0 rgba(0, 0, 0, 0.03);
-    background-color: #fcfcfc;
-    border: solid 0.8px #e0e8ed;
+  @include breakpoint-desktop-m {
+    margin-top: -30px;
   }
 
-  .some-image {
-    border-radius: 5px;
-    background-color: #ffffff;
-    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.05);
+  .collaboration-image__containter {
+
+    @include breakpoint-desktop-m {
+      padding: 0 24px;
+    }
+
+    .collaboration-image {
+      display: block;
+      max-width: 100%;
+      margin: auto;
+      margin-bottom: 200px;
+
+      border-radius: 20px;
+      box-shadow: 0 16px 25px 0 rgba(0, 0, 0, 0.03);
+      background-color: #fcfcfc;
+      border: solid 0.8px #e0e8ed;
+    }
   }
 
   p {
@@ -23,17 +31,33 @@
   }
 
   .divider {
-    width: 312px;
+    max-width: 312px;
     height: 2px;
     border-bottom: solid 1px #e0e8ed;
   }
 
+  .some-image {
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.05);
+  }
   .collaboration-left {
+
+    .some-image {
+      margin-top: 120px;
+    }
 
   }
 
   .collaboration-right {
 
+    .some-image {
+      margin-bottom: 120px;
+    }
+
+    .collaboration-right__content {
+      padding-left: 120px;
+    }
   }
 }
 

@@ -13,7 +13,7 @@ const HeroButton = ({text, cssClass}) => {
 class Hero extends React.Component {
   render() {
     return (
-      <div className="hero section">
+      <div className="hero section grey-background">
         <div className="hero-content section-content">
           <div className="two-cols">
             <div className="hero-left left">

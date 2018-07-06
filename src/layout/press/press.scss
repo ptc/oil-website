@@ -1,10 +1,9 @@
+@import '../variables';
+
 .press {
   height: 715px;
   padding-top: 150px;
   margin-bottom: -150px;
-
-  background: url('../bg.svg') no-repeat center center;
-  background-size: cover;
 
   .press-content {
     max-width: 832px;
@@ -15,6 +14,7 @@
     padding: 15px;
     border-top: solid 1px #e0e8ed;
 
+    color: #3c4c57;
     font-size: 18px;
     font-weight: normal;
     line-height: 1.5;

@@ -1,5 +1,23 @@
+@import './variables';
+
 body {
   font-family: 'Source Sans Pro', serif;;
+}
+
+img {
+  max-width: 100%;
+  margin: auto;
+}
+
+.grey-background {
+
+  background: url('bg.svg') no-repeat center center;
+  background-size: cover;
+
+  @include breakpoint-retina {
+    background-size: contain;
+    background-position: center;
+  }
 }
 
 .section {
@@ -15,6 +33,10 @@ body {
     margin: auto;
     padding: 132px 158px;
 
+    @include breakpoint-desktop-m {
+      padding: 132px 60px;
+
+    }
   }
 
   a {
@@ -77,6 +99,7 @@ body {
 
   p {
     max-width: 435px;
+    padding-right: 26px;
   }
 
   li {
