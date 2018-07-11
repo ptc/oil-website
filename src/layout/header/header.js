@@ -49,8 +49,8 @@ class Header extends React.Component {
             <MenuEntry text="Support" link="#"/>
             <MenuEntry text="About us" link="#"/>
 
-            <LinkButton text="Sandbox" cssClass="menu-button blue-design" href="http://sandbox.oiljs.org" />
-            <LinkButton text="Github" cssClass="menu-button" href="https://github.com/as-ideas/oil" />
+            <LinkButton text="Sandbox" cssClass="menu-button blue-design" />
+            <LinkButton text="Github" cssClass="menu-button" />
 
             <li className='header-menu__burger-toggle' onClick={this.toggleMenu.bind(this)}>
               <IconBurger/>

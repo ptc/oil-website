@@ -2,8 +2,17 @@ import React from "react";
 
 class LinkButton extends React.Component {
   render() {
+
+    let href = this.props.href;
+    if(!href && this.props.text == 'Sandbox') {
+      href = 'http://sandbox.oiljs.org';
+    }
+    if(!href && this.props.text == 'Github') {
+      href = 'https://github.com/as-ideas/oil';
+    }
+
     return (
-        <a className={this.props.cssClass} href={this.props.href} target="_blank">
+        <a className={this.props.cssClass} href={href} target="_blank">
         {this.props.text}
       </a>
     )
