@@ -8,9 +8,10 @@ class AboutUs extends React.Component {
     return (
       <div id="aboutus" className="aboutus section">
         <div className="aboutus-content section-content">
+          <h6>WHY OIL</h6>
           <h2>About us</h2>
           <p className="aboutus__description">
-            When we set out to look for compliance solutions for cookies and other technologies, we realized there was no mature solution available, so we built our own: the Opt-in and Transparency Layer (OIL). Cookie usage directly affects our core business and we therefore believe it makes sense for publishers to keep compliance solutions in their own hands. Additionally, we are collaborating with other publishers from across Europe to improve OIL even further.
+            When we set out to find compliance solutions for cookies and other technologies, we realized there was no mature solution available, and built our own: the Opt-in and Transparency Layer (OIL). Cookie usage directly affects our core business and we therefore believe it makes sense for publishers to keep compliance solutions in their own hands. Additionally, we are collaborating with other publishers from across Europe to improve OIL even further.
           </p>
           <div className="two-cols">
             <div className="aboutus-left left">

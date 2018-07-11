@@ -1,6 +1,11 @@
 $backgroundcolor: #f9fafc;
 $backgroundangle: 178deg;
 $light-sky-blue: #1eb8ff;
+$light-blue: #8bd9ff;
+$less-light-blue: #38b8ff;
+$dark-blue: #3c4c57;
+$darker-blue: #1c2931;
+$grey-heading: #283444;
 
 $padding: 1vw;
 
@@ -30,5 +35,17 @@ $breakpoint-retina: 1440px;
 @mixin breakpoint-retina {
   @media only screen and (min-width: $breakpoint-retina) {
     @content;
+  }
+}
+
+@mixin smoother-transition {
+  webkit-transition: box-shadow 0.2s; /* Safari */
+  transition: box-shadow 0.2s, background-color 0.2s;
+}
+
+@mixin thicker-hover-shadow {
+  &:hover {
+    box-shadow: 0 16px 25px 0 rgba(0, 0, 0, 0.07);
+    @include smoother-transition;
   }
 }

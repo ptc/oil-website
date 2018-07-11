@@ -28,12 +28,20 @@
 
         text-decoration: none;
 
+        @include thicker-hover-shadow;
+
         &.light-blue-design {
-          background-color: #8bd9ff;
+          background-color: $light-blue;
+          &:hover {
+             background-color: $less-light-blue;
+          }
         }
 
         &.dark-blue-design {
-          background-color: #3c4c57;
+          background-color: $dark-blue;
+          &:hover {
+             background-color: $darker-blue;
+          }
         }
       }
 
@@ -50,6 +58,9 @@
         box-shadow: 0 16px 25px 0 rgba(0, 0, 0, 0.03);
         background-color: #f9fafc;
         border: solid 1px #e0e8ed;
+
+        @include thicker-hover-shadow;
+        @include smoother-transition;
       }
     }
   }

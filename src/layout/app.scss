@@ -17,7 +17,7 @@ img {
     max-width: 1124px;
     margin: auto;
     padding-top: 4vh;
-    padding-bottom: 4vh;
+    padding-bottom: 6vh;
   }
 
   a {
@@ -54,7 +54,7 @@ img {
     line-height: 1.15;
     letter-spacing: normal;
     text-align: left;
-    color: #283444;
+    color: $grey-heading;
   }
 
   h6 {
@@ -64,7 +64,7 @@ img {
     letter-spacing: 0.5px;
     text-align: left;
     text-transform: uppercase;
-    color: #1eb8ff;
+    color: $light-sky-blue;
   }
 
   p, li {
