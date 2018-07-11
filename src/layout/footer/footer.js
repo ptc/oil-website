@@ -1,4 +1,5 @@
 import React from "react";
+import LinkButton from '../button/link-button';
 
 require('./footer.scss');
 
@@ -24,9 +25,9 @@ class Footer extends React.Component {
           <div className="footer-col__3">
             <h3>Other</h3>
             <ul>
-              <li><a className="footer__link">Github</a></li>
+              <li><LinkButton text="Github" cssClass="footer__link" /></li>
               <li><a className="footer__link">Documentation</a></li>
-              <li><a className="footer__link">Sandbox</a></li>
+              <li><LinkButton text="Sandbox" cssClass="footer__link" /></li>
             </ul>
           </div>
           <div className="footer-col__4">

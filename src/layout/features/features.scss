@@ -1,12 +1,10 @@
 @import '../variables';
 
 .features {
-  min-height: 790px;
-  margin-top: 20px;
-  padding-top: 40px;
 
   .features__headlines {
     padding: 0;
+    padding-top: 4vh;
   }
 
   .features-content {

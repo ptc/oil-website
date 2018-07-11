@@ -13,6 +13,10 @@ body {
     letter-spacing: 0.6px;
     color: #7c5ae8;
 
+    &:hover {
+      text-decoration: underline;
+    }
+
     img {
       margin-left: 14px;
     }
