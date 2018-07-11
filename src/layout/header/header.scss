@@ -78,6 +78,7 @@
         text-align: center;
         border-radius: 4px;
         border: solid 1px $grey-button-border;
+        margin-right: $default-padding;
 
         &:hover {
           border-color: $greyer-button-border;
@@ -85,15 +86,18 @@
 
         &.blue-design {
           border-color: $light-blue;
-          margin-right: 15px;
           &:hover {
             border-color: $less-light-blue;
           }
         }
+
+        @include breakpoint-smartphone {
+          width: 90px;
+        }
       }
 
       .header-menu__burger-toggle {
-        padding: 4px 8px 0 50px;
+        padding: 4px 8px 0 12px;
 
         svg {
           height: 32px;
@@ -107,15 +111,10 @@
     }
 
     @include breakpoint-desktop-m {
-      .header-menu {
-        .menu-entry {
-          display: none;
-        }
-
-        .header-menu__burger-toggle {
-          display: inline-block;
-        }
-      }
+      @include burger;
+    }
+    @include breakpoint-smartphone {
+      @include burger;
     }
   }
 

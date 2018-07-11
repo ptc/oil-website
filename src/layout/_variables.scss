@@ -40,6 +40,18 @@ $breakpoint-retina: 1440px;
   }
 }
 
+@mixin burger {
+  .header-menu {
+    .menu-entry {
+      display: none;
+    }
+
+    .header-menu__burger-toggle {
+      display: inline-block;
+    }
+  }
+}
+
 @mixin smoother-transition {
   webkit-transition: box-shadow 0.2s; /* Safari */
   transition: box-shadow 0.2s, background-color 0.2s;
