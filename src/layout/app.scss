@@ -9,18 +9,6 @@ img {
   margin: auto;
 }
 
-.grey-background {
-
-  background-color: #f9fafc;
-  background-size: cover;
-  width: 100%;
-
-  @include breakpoint-retina {
-    background-size: contain;
-    background-position: center;
-  }
-}
-
 .section {
   max-width: 100%;
   position: relative;

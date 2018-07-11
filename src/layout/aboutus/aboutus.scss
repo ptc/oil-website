@@ -10,12 +10,15 @@
   }
 
   p.aboutus__citation {
-    max-width: 335px;
-    color: #1eb8ff;
+    max-width: 385px;
+    color: $light-sky-blue;
 
     font-size: 18px;
     line-height: 1.5;
     letter-spacing: 0.5px;
+
+    font-family: 'Source Code Pro';
+    font-weight: 100;
   }
 
   .aboutus-left {
