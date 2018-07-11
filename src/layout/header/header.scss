@@ -3,15 +3,11 @@
 .header {
   width: 100%;
 
-  padding-left: 1vw;
-  padding-right: 1vw;
-
   .header-content {
     height: 50px;
     max-width: 1440px;
     width: 100%;
     margin: auto;
-
 
     display: flex;
     justify-content: space-between;
@@ -26,6 +22,7 @@
     letter-spacing: normal;
 
     .header-logo {
+      padding-left: 1vw;
       display: flex;
       justify-content: flex-start;
       align-items: center;
