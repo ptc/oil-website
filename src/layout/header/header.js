@@ -3,10 +3,11 @@ import React from "react";
 require('./header.scss');
 
 const MenuEntry = ({link, text, onClick}) => {
-  return <a className="menu-entry" href={link} onClick={onClick}>
+  return <a data-scroll className="menu-entry" href={link} onClick={onClick}>
     {text}
   </a>
 };
+
 
 const MenuButton = ({text, cssClass}) => {
   return <a className={"menu-button " + cssClass}>
@@ -35,6 +36,10 @@ class Header extends React.Component {
     this.setState({expanded: false});
   }
 
+  scrollTo(scrollToId) {
+
+  }
+
   render() {
     return (
       <div id="header" className="header">
@@ -48,11 +53,11 @@ class Header extends React.Component {
             </div>
           </div>
           <div className="header-menu">
-            <MenuEntry text="Product" link="#"/>
-            <MenuEntry text="Developer" link="#"/>
-            <MenuEntry text="Collaboration" link="#"/>
-            <MenuEntry text="Support" link="#"/>
-            <MenuEntry text="About us" link="#"/>
+            <MenuEntry text="Product" link="#product"/>
+            <MenuEntry text="Developer" link="#developer"/>
+            <MenuEntry text="Collaboration" link="#collaboration"/>
+            <MenuEntry text="Support" link="#support"/>
+            <MenuEntry text="About us" link="#aboutus"/>
 
             <MenuButton text="Sandbox" cssClass="blue-design"/>
             <MenuButton text="Github"/>
@@ -68,11 +73,11 @@ class Header extends React.Component {
           (this.state.expanded ?
             <div className="burger-menu-content">
               <div className="burger-menu-content__list">
-                <MenuEntry text="Product" link="#" onClick={this.hideMenu.bind(this)}/>
-                <MenuEntry text="Developer" link="#" onClick={this.hideMenu.bind(this)}/>
-                <MenuEntry text="Collaboration" link="#" onClick={this.hideMenu.bind(this)}/>
-                <MenuEntry text="Support" link="#" onClick={this.hideMenu.bind(this)}/>
-                <MenuEntry text="About us" link="#" onClick={this.hideMenu.bind(this)}/>
+                <MenuEntry text="Product" link="#product" onClick={this.hideMenu.bind(this)}/>
+                <MenuEntry text="Developer" link="#developer" onClick={this.hideMenu.bind(this)}/>
+                <MenuEntry text="Collaboration" link="#collaboration" onClick={this.hideMenu.bind(this)}/>
+                <MenuEntry text="Support" link="#support" onClick={this.hideMenu.bind(this)}/>
+                <MenuEntry text="About us" link="#aboutus" onClick={this.hideMenu.bind(this)}/>
               </div>
             </div>
             : '')
