@@ -5,11 +5,15 @@
   .press-content {
     max-width: 832px;
     margin: auto;
+    min-height: 460px;
+  }
+  .press-titles {
+    padding: $default-padding
   }
 
   .press-entry {
-    padding: 15px;
-    border-top: solid 1px #e0e8ed;
+    padding: $default-padding;
+    border-bottom: solid 1px #e0e8ed;
 
     color: #3c4c57;
     font-size: 18px;
