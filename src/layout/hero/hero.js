@@ -1,15 +1,9 @@
 import React from "react";
 import CollaborateLink from '../collaborate-link/collaborate-link';
 import GreyBackgroundPart from '../background/grey-background-part';
+import LinkButton from '../button/link-button';
 
 require('./hero.scss');
-
-const HeroButton = ({text, cssClass, href}) => {
-  return <a className={"hero-button " + cssClass} href={href} target="_blank">
-    {text}
-  </a>
-};
-
 
 class Hero extends React.Component {
   render() {
@@ -24,8 +18,8 @@ class Hero extends React.Component {
                 <p>OIL is a holistic consent management platform that enables your compliance with GDPR and ePrivacy.
                   It is open-source, based on the IAB TCF Standard and is currently being developed by a collaboration of international publishers. </p>
 
-                <HeroButton text="Sandbox" cssClass="light-blue-design" href="https://sandbox.oiljs.org/" />
-                <HeroButton text="Github" cssClass="dark-blue-design" href="https://github.com/as-ideas/oil" />
+                <LinkButton text="Sandbox" cssClass="hero-button light-blue-design" href="https://sandbox.oiljs.org/" />
+                <LinkButton text="Github" cssClass="hero-button dark-blue-design" href="https://github.com/as-ideas/oil" />
                 <CollaborateLink/>
               </div>
               <div className="hero-right right">
