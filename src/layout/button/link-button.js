@@ -1,6 +1,7 @@
 import React from "react";
 
 class LinkButton extends React.Component {
+  
   render() {
 
     let href = this.props.href;
@@ -17,6 +18,7 @@ class LinkButton extends React.Component {
       </a>
     )
   }
+
 };
 
 export default LinkButton;
