@@ -1,8 +1,7 @@
 @import '../variables';
 
 .header {
-  max-width: 1440px;
-  margin: auto;
+  width: 100%;
 
   @include breakpoint-desktop-l {
     padding: 0 16px;
@@ -10,6 +9,9 @@
 
   .header-content {
     height: 50px;
+    width: 1440px;
+    margin: auto;
+
 
     display: flex;
     justify-content: space-between;
