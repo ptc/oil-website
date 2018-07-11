@@ -7,9 +7,9 @@ $dark-blue: #3c4c57;
 $darker-blue: #1c2931;
 $grey-heading: #283444;
 
-$padding: 1vw;
+$default-padding: 1vw;
 
-$breakpoint-phone: 460px;
+$breakpoint-phone: 461px;
 $breakpoint-desktop: 1000px;
 $breakpoint-retina: 1440px;
 
@@ -44,6 +44,7 @@ $breakpoint-retina: 1440px;
 }
 
 @mixin thicker-hover-shadow {
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.04);
   &:hover {
     box-shadow: 0 16px 25px 0 rgba(0, 0, 0, 0.07);
     @include smoother-transition;

@@ -7,7 +7,7 @@
   .hero-content {
     .hero-left {
       padding-top: 6vw;
-      padding-right: $padding;
+      padding-right: $default-padding;
 
       .hero-button {
         display: inline-block;
@@ -15,7 +15,6 @@
         height: 45px;
         border-radius: 4px;
         color: #ffffff;
-        box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.05);
 
         margin-right: 15px;
 
@@ -25,6 +24,7 @@
         font-family: 'Source Code Pro', serif;
         font-size: 16px;
         letter-spacing: 0.6px;
+        margin-bottom: $default-padding;
 
         text-decoration: none;
 
@@ -49,6 +49,7 @@
 
     .hero-right {
       padding-top: 3vh;
+      float: right;
       img {
         max-width: 100%;
         margin: auto;

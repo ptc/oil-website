@@ -3,13 +3,13 @@
 .header {
   width: 100%;
 
-  @include breakpoint-desktop-l {
-    padding: 0 16px;
-  }
+  padding-left: 1vw;
+  padding-right: 1vw;
 
   .header-content {
     height: 50px;
-    width: 1440px;
+    max-width: 1440px;
+    width: 100%;
     margin: auto;
 
 
