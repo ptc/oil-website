@@ -11,8 +11,9 @@ img {
 
 .grey-background {
 
-  background: url('bg.svg') no-repeat center center;
+  background-color: #f9fafc;
   background-size: cover;
+  width: 100%;
 
   @include breakpoint-retina {
     background-size: contain;
@@ -25,18 +26,10 @@ img {
   position: relative;
 
   .section-content {
-    //max-width: 1440px;
-    //padding: 132px 158px;
-    //margin: auto;
-
     max-width: 1124px;
     margin: auto;
-    padding: 132px 158px;
-
-    @include breakpoint-desktop-m {
-      padding: 132px 60px;
-
-    }
+    padding-top: 4vh;
+    padding-bottom: 4vh;
   }
 
   a {
