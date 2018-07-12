@@ -1,16 +1,10 @@
 import React from "react";
+import LinkButton from '../button/link-button';
 
 require('./header.scss');
 
 const MenuEntry = ({link, text, onClick}) => {
   return <a data-scroll className="menu-entry" href={link} onClick={onClick}>
-    {text}
-  </a>
-};
-
-
-const MenuButton = ({text, cssClass}) => {
-  return <a className={"menu-button " + cssClass}>
     {text}
   </a>
 };
@@ -59,8 +53,8 @@ class Header extends React.Component {
             <MenuEntry text="Support" link="#support"/>
             <MenuEntry text="About us" link="#aboutus"/>
 
-            <MenuButton text="Sandbox" cssClass="blue-design"/>
-            <MenuButton text="Github"/>
+            <LinkButton text="Sandbox" cssClass="menu-button blue-design" />
+            <LinkButton text="Github" cssClass="menu-button" />
 
             <li className='header-menu__burger-toggle' onClick={this.toggleMenu.bind(this)}>
               <IconBurger/>

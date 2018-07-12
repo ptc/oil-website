@@ -1,10 +1,17 @@
-# gatsby-starter-hello-world
-Starter with the bare essentials needed for a [Gatsby](https://www.gatsbyjs.org/) site
+# OIL Website
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-```
-gatsby new gatsby-site https://github.com/gatsbyjs/gatsby-starter-hello-world
-```
+This project uses Gatsby to generate a React website in static HTML.
 
-## Running in development
-`gatsby develop`
+## Setting up the project
+
+Clone the repository, enter the folder and install dependencies:
+
+    git clone https://github.com/as-ideas/oil-website
+    cd oil-website
+    npm install
+
+## Development
+
+To run a dev server on your local machine at `http://localhost:8000`
+
+    npm start

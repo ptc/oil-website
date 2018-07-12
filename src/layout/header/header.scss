@@ -1,15 +1,13 @@
 @import '../variables';
 
 .header {
-  max-width: 1440px;
-  margin: auto;
-
-  @include breakpoint-desktop-l {
-    padding: 0 16px;
-  }
+  width: 100%;
 
   .header-content {
     height: 50px;
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
 
     display: flex;
     justify-content: space-between;
@@ -24,6 +22,7 @@
     letter-spacing: normal;
 
     .header-logo {
+      padding-left: 1vw;
       display: flex;
       justify-content: flex-start;
       align-items: center;
@@ -75,16 +74,27 @@
 
         text-align: center;
         border-radius: 4px;
-        border: solid 1px #c0cbda;
+        border: solid 1px $grey-button-border;
+        margin-right: $default-padding;
+
+        &:hover {
+          border-color: $greyer-button-border;
+        }
 
         &.blue-design {
-          border-color: #8bd9ff;
-          margin-right: 15px;
+          border-color: $light-blue;
+          &:hover {
+            border-color: $less-light-blue;
+          }
+        }
+
+        @include breakpoint-smartphone {
+          width: 90px;
         }
       }
 
       .header-menu__burger-toggle {
-        padding: 4px 8px 0 50px;
+        padding: 4px 8px 0 12px;
 
         svg {
           height: 32px;
@@ -98,15 +108,10 @@
     }
 
     @include breakpoint-desktop-m {
-      .header-menu {
-        .menu-entry {
-          display: none;
-        }
-
-        .header-menu__burger-toggle {
-          display: inline-block;
-        }
-      }
+      @include burger;
+    }
+    @include breakpoint-smartphone {
+      @include burger;
     }
   }
 

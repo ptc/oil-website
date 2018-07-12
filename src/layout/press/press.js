@@ -1,4 +1,5 @@
 import React from "react";
+import GreyBackgroundPart from '../background/grey-background-part';
 
 require('./press.scss');
 
@@ -13,12 +14,15 @@ const PressEntry = (props) => {
 class Press extends React.Component {
   render() {
     return (
-      <div id="press" className="press section grey-background">
-        <div className="press-content section-content">
-          <div className="press-titles">
-            <h2>Press</h2>
+      <div id="press" className="press section">
+        <GreyBackgroundPart type="top" />
+        <div className="grey-background">
+          <div className="press-content section-content">
+            <div className="press-titles">
+              <h2>Press</h2>
+            </div>
+            {this.props.entries.map(edge => <PressEntry key={edge.node.id} post={edge.node}/>)}
           </div>
-          {this.props.entries.map(edge => <PressEntry key={edge.node.id} post={edge.node}/>)}
         </div>
       </div>
     )

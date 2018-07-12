@@ -2,13 +2,6 @@
 
 .support {
 
-  height: 790px;
-  margin-top: 20px;
-  padding-top: 40px;
-
-  background: url('../bg.svg') no-repeat center center;
-  background-size: cover;
-
   .support__titles {
     p, h2, h6 {
       margin: auto;
@@ -17,8 +10,6 @@
 
     p {
       max-width: initial;
-      padding: 15px;
-      margin-bottom: 15px;
     }
   }
 
