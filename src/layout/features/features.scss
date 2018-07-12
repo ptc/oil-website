@@ -5,6 +5,11 @@
   .features__headlines {
     padding: 0;
     padding-top: 4vh;
+
+    @include breakpoint-smartphone {
+      padding: 0 20px;
+    }
+
   }
 
   .features-content {
@@ -13,6 +18,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+
+    @include breakpoint-smartphone {
+      padding-right: 0;
+    }
 
     .feature-box {
       flex: 1 1 260px;

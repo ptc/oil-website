@@ -16,14 +16,27 @@ img {
   .section-content {
     max-width: 1124px;
     margin: auto;
-    padding-top: 4vh;
-    padding-bottom: 6vh;
-    padding-left: 1vw;
-    padding-right: 1vw;
+    //padding-top: 4vh;
+    //padding-bottom: 6vh;
+    //padding-left: 1vw;
+    //padding-right: 1vw;
+
+    padding: 132px 158px;
+
+    @include breakpoint-desktop-m {
+      padding: 132px 60px;
+    }
+
+    @include breakpoint-smartphone {
+      padding: 1vh 16px;
+    }
+
   }
 
   a {
     color: #283444;
+    cursor: pointer;
+    text-decoration: none;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -83,6 +96,12 @@ img {
   p {
     max-width: 435px;
     padding-right: 26px;
+
+    @include breakpoint-smartphone {
+      max-width: 100%;
+      padding-right: 0;
+      text-align: justify;
+    }
   }
 
   li {
@@ -96,15 +115,14 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 
-  .left {
+  .left, .right {
     flex: 1 1 40%;
-    //margin-right: 140px;
+
+    @include breakpoint-smartphone {
+      min-width: 70%;
+    }
   }
 
-  .right {
-    flex: 1 1 40%;
-    //padding-right: 140px;
-  }
 }
 
 // FIMXE TO REMOVE
@@ -145,6 +163,13 @@ img {
     height: 100%;
     background: linear-gradient(45deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
   }
+}
+
+.not-xs {
+  @include breakpoint-smartphone {
+    display: none;
+  }
+
 }
 
 .corner-top-left-bevel {

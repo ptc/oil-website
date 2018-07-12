@@ -23,13 +23,21 @@ module.exports = class HTML extends React.Component {
     return (
       <html {...this.props.htmlAttributes}>
       <head>
-        <title>OIL.js</title>
+        <title>OIL.js - Co</title>
+
         <meta charSet="utf-8"/>
         <meta httpEquiv="x-ua-compatible" content="ie=edge"/>
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+        <meta property="og:url" content="https://www.oiljs.org"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="oil.js - Open Source Opt-In Layer"/>
+        <meta property="og:description" content="oil.js is a lightweight consent manager and cookie banner. It is optimized for low latency and performance. It aims to be easy to customize, simple and user-friendly. It supports the IAB framework to forward the consent to ad providers."/>
+        <meta property="og:image" content="https://www.oiljs.org/cover.png"/>
+        <meta name="keywords" content="oiljs,oil,gdpr,cookie-banner,dsgvo,iab,cmp,opt-ins,opt-in,consent-management,consentcookie,consent-handling,consent,eprivacy,Axel Springer,Ideas Engineering,Axel Springer Ideas Engineering,Innovation,Software,Development,Product"/>
+        <meta name="author" content="Axel Springer Ideas Engineering GmbH"/>
+
+
         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:300,400,600" rel="stylesheet"/>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"/>
         <script src="//cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"/>

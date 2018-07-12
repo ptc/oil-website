@@ -61,8 +61,13 @@
       .faq-entry__contact-us {
         display: flex;
         justify-content: space-between;
+
         align-items: baseline;
         width: 100%;
+
+        @include breakpoint-smartphone {
+          flex-direction: column;
+        }
 
         .faq-entry__contact-us__arrow {
           color: #7c5ae8;
@@ -72,6 +77,10 @@
           line-height: normal;
           letter-spacing: 0.6px;
 
+          @include breakpoint-smartphone {
+            margin-top: 24px;
+            margin-bottom: 16px;
+          }
         }
       }
     }

@@ -89,7 +89,11 @@
         }
 
         @include breakpoint-smartphone {
-          width: 90px;
+          height: 24px;
+          width: 80px;
+
+          font-size: 14px;
+          line-height: 24px;
         }
       }
 
@@ -99,6 +103,11 @@
         svg {
           height: 32px;
           width: 32px;
+
+          @include breakpoint-smartphone {
+            height: 26px;
+            width: 26px;
+          }
         }
       }
 

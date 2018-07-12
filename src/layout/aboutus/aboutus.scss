@@ -7,6 +7,11 @@
   p.aboutus__description {
     max-width: 550px;
     margin-bottom: 40px;
+
+    @include breakpoint-smartphone {
+      margin-bottom: 0;
+    }
+
   }
 
   p.aboutus__citation {
@@ -19,20 +24,33 @@
 
     font-family: 'Source Code Pro';
     font-weight: 100;
-  }
 
-  .aboutus-left {
-    display: flex;
-    justify-content: flex-end;
-    .aboutus__citation {
-      //margin-top: 80px;
+    @include breakpoint-smartphone {
+      font-size: 14px;
+      line-height: 1.3;
+
+      .aboutus__citation-author {
+        font-size: 12px;
+        line-height: 1;
+      }
     }
   }
 
-  .aboutus-right {
-    .aboutus__citation {
-      padding-left: 12%;
+  .two-cols {
+    .aboutus-left {
+      display: flex;
+      justify-content: flex-end;
     }
-  }
 
+    .aboutus-right {
+      .aboutus__citation {
+        padding-left: 12%;
+
+        @include breakpoint-smartphone {
+          padding-left: 0;
+        }
+      }
+    }
+
+  }
 }

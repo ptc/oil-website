@@ -64,6 +64,10 @@
         max-width: 80%;
       }
 
+      @include breakpoint-smartphone {
+        margin-top: 0;
+      }
+
       .list-element {
         display: flex;
         align-items: flex-start;

@@ -4,6 +4,10 @@
   min-height: 790px;
   margin-top: 20px;
 
+  @include breakpoint-smartphone {
+    margin-top: 0;
+  }
+
   .hero-content {
     .hero-left {
       padding-top: 6vw;
@@ -33,15 +37,19 @@
         &.light-blue-design {
           background-color: $light-blue;
           &:hover {
-             background-color: $less-light-blue;
+            background-color: $less-light-blue;
           }
         }
 
         &.dark-blue-design {
           background-color: $dark-blue;
           &:hover {
-             background-color: $darker-blue;
+            background-color: $darker-blue;
           }
+        }
+
+        @include breakpoint-smartphone {
+          width: 40%;
         }
       }
 
@@ -56,11 +64,6 @@
         margin: auto;
         display: inline-block;
 
-        border-radius: 16px;
-        background-color: #f9fafc;
-        border: solid 1px #e0e8ed;
-
-        @include thicker-hover-shadow;
         @include smoother-transition;
       }
     }
