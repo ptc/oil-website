@@ -48,7 +48,7 @@ class Header extends React.Component {
           </div>
           <div className="header-menu">
             <MenuEntry text="Product" link="#product"/>
-            <MenuEntry text="Developer" link="#developer"/>
+            <MenuEntry text="Features" link="#features"/>
             <MenuEntry text="Collaboration" link="#collaboration"/>
             <MenuEntry text="Support" link="#support"/>
             <MenuEntry text="About us" link="#aboutus"/>

@@ -37,8 +37,7 @@ class Faq extends React.Component {
           <div className="faq-titles">
             <h6>SUPPORT</h6>
             <h2>Frequently Asked Questions</h2>
-            <p>Want to know more about OIL before becoming an active collaborator?<br/>
-              In that case, please sign up to our weekly webinar!</p>
+            <br/>
           </div>
 
           {this.props.entries.map(edge => <FaqEntry key={edge.node.id} post={edge.node}/>)}
@@ -57,25 +56,4 @@ class Faq extends React.Component {
   }
 }
 
-
-//
-//
-
-
-// export const pageQuery = graphql`
-// query IndexQuery {
-//     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___title] }) {
-//       edges {
-//         node {
-//           id
-//           excerpt(pruneLength: 250)
-//           frontmatter {
-//             path
-//             title
-//           }
-//         }
-//       }
-//     }
-//   }
-// `;
 export default Faq;

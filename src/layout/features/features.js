@@ -6,7 +6,7 @@ require('./features.scss');
 const FeatureBox = (props) => {
   return <div className="feature-box">
     <div className="icon">
-      <div className="icon-round"><i className="fab fa-accessible-icon"/></div>
+      <div className="icon-round"><i className="fa fa-fire"/></div>
     </div>
     <div>
       <h4>{props.title}</h4>

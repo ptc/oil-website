@@ -14,15 +14,9 @@ class Support extends React.Component {
             <h6>SUPPORT</h6>
             <h2>Contact & Additional Information</h2>
             <p>
-              Want to know more about OIL before becoming an active collaborator?
-              <br/>In that case, please sign up to our weekly webinar!
-            </p>
-          </div>
-          <div className="support-content section-content">
-            <p>
-              Meine Freundin ist nicht mehr schön<br />
-              Ich leg mich in die Badewanne<br />
-              Mit meinem Föhn
+              Want to know more about OIL?
+              <br/>
+              Drop a message: <b><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#111;&#105;&#108;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#97;&#115;&#105;&#100;&#101;&#97;&#115;&#46;&#100;&#101;">&#111;&#105;&#108;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#97;&#115;&#105;&#100;&#101;&#97;&#115;&#46;&#100;&#101;</a></b>
             </p>
           </div>
         </div>
