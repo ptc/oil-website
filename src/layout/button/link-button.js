@@ -11,6 +11,9 @@ class LinkButton extends React.Component {
     if(!href && this.props.text === 'Github') {
       href = 'https://github.com/as-ideas/oil';
     }
+    if(!href && this.props.text === 'Documentation') {
+      href = 'https://oil.axelspringer.com/docs/';
+    }
 
     return (
       <a className={this.props.cssClass} href={href} target="_blank">
