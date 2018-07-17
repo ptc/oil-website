@@ -44,10 +44,10 @@ class Faq extends React.Component {
 
           <div className="faq-entry">
             <div className="faq-entry__question">
-              <a className="faq-entry-text faq-entry__contact-us">
+              <div className="faq-entry__contact-us">
                 <div>If you still have question, don’t hesitate and contact us.</div>
-                <div className="faq-entry__contact-us__arrow">Contact us <img src={require('./arrow.svg')}/></div>
-              </a>
+                <div className="faq-entry__contact-us__arrow"><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#111;&#105;&#108;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#97;&#115;&#105;&#100;&#101;&#97;&#115;&#46;&#100;&#101;">Contact us <img src={require('./arrow.svg')}/></a></div>
+              </div>
             </div>
           </div>
         </div>

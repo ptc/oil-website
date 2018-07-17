@@ -61,6 +61,12 @@
       .faq-entry__contact-us {
         display: flex;
         justify-content: space-between;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.25;
+        letter-spacing: normal;
+        text-align: left;
+        color: #283444;
 
         align-items: baseline;
         width: 100%;
@@ -70,12 +76,15 @@
         }
 
         .faq-entry__contact-us__arrow {
-          color: #7c5ae8;
-          height: 20px;
-          font-size: 16px;
-          font-weight: normal;
-          line-height: normal;
-          letter-spacing: 0.6px;
+
+          a {
+            color: #7c5ae8;
+            height: 20px;
+            font-size: 16px;
+            font-weight: normal;
+            line-height: normal;
+            letter-spacing: 0.6px;
+          }
 
           @include breakpoint-smartphone {
             margin-top: 24px;
