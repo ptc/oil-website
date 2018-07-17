@@ -6,7 +6,7 @@ require('./collaborate-link.scss');
 class CollaborateLink extends React.Component {
   render() {
     return (
-      <a href="" target="_blank" className="collaborate-link">Collaborate with us <img src={require('./arrow.svg')}/></a>
+      <a href="https://github.com/as-ideas/oil/blob/master/CONTRIBUTING.md" target="_blank" className="collaborate-link">Collaborate with us <img src={require('./arrow.svg')}/></a>
     )
   }
 }
