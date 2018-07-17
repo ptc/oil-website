@@ -1,8 +1,6 @@
 ---
-title: "Was sind die Kernfunktionen des Opt-in Layers?"
+title: "What are the core features of Opt-in Layer?"
 ---
-Technische Lösungen zur Ermöglichung datenschutzrechtlicher Transparenz und Kontrolle für den Endnutzer.
-
-* Standardisierte Technik zur Consent-Einholung sowie automatisierte Opt-out Weitergabe.
-
-* Mehr Kontrolle für Publisher hinsichtlich Datensammlung und Tracking. Dies wird durch die Selektion der sogenannten Purposes des IAB Frameworks ermöglicht.
+Opt-in Layer provides technical solutions that enable publishers to provide data protection transparency and users to have control over their data.
+OIL offers a standardized technology for obtaining consent and automatic consent transmission to vendors. It gives publishers more control
+concerning data collection and tracking. This is provided by selection of so-called purposes defined in the IAB framework.

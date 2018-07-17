@@ -35,7 +35,7 @@ export const pageQuery = graphql`
   query IndexQuery {
     faq: allMarkdownRemark(
      filter: { fileAbsolutePath: {regex : "\\/faq/"} },
-     sort: { order: DESC, fields: [fileAbsolutePath] },
+     sort: { order: ASC, fields: [fileAbsolutePath] },
     ) {
       edges {
         node {
