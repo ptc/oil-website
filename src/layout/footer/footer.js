@@ -14,12 +14,12 @@ class Footer extends React.Component {
           <div className="footer-col__2">
             <h3>Sitemap</h3>
             <ul>
-              <li><a href="#header" className="footer__link">Home</a></li>
-              <li><a href="#product" className="footer__link">Product</a></li>
-              <li><a href="#features" className="footer__link">Features</a></li>
-              <li><a href="#collaboration" className="footer__link">Collaboration</a></li>
-              <li><a href="#support" className="footer__link">Support</a></li>
-              <li><a href="#aboutus" className="footer__link">About us</a></li>
+              <li><a href="/#header" className="footer__link">Home</a></li>
+              <li><a href="/#product" className="footer__link">Product</a></li>
+              <li><a href="/#features" className="footer__link">Features</a></li>
+              <li><a href="/#collaboration" className="footer__link">Collaboration</a></li>
+              <li><a href="/#support" className="footer__link">Support</a></li>
+              <li><a href="/#aboutus" className="footer__link">About us</a></li>
             </ul>
           </div>
           <div className="footer-col__3">
