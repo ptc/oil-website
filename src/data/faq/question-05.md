@@ -1,5 +1,5 @@
 ---
-title: "Is Opt-in Layer already used for Axel Springer websites?"
+title: "Does OIL provide a managed service?"
 ---
-The Opt-in Layer is currently used by [Business Insider](https://www.businessinsider.de/). SPRING Axel Springer Digital News Media GmbH & Co. KG
-currently implements Opt-in Layer for their websites where OIL is to be used as opt-out tool.
+No. As an Open Source project, available on [GitHub](https://github.com/as-ideas/oil), OIL cannot provide a managed service. If you want to
+use it you are required to host it by yourself (please see [documentation](https://oil.axelspringer.com/docs/) for details how to do it).
