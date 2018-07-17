@@ -9,7 +9,7 @@ class Collaboration extends React.Component {
     return (
       <div id="collaboration" className="collaboration section">
         <div className="collaboration-image__containter">
-          <img className="collaboration-image" src="http://placehold.it/1125x652"/>
+          <img className="collaboration-image" src={require('./badmovie.jpg')}/>
         </div>
         <div className="collaboration-content section-content">
           <div className="two-cols">
@@ -20,12 +20,10 @@ class Collaboration extends React.Component {
               <p>Engage and empower yourself or your development team by becoming a technical expert for consent management. Test-it, Feedback -it, Fork-it. Let’s fuel OIL together.</p>
               <div className="divider"/>
               <CollaborateLink/>
-              <img className="some-image" src="http://placehold.it/435x289"/>
-
+              <img className="some-image" src={require('./oil-dev-caffee.gif')}/>
             </div>
             <div className="collaboration-right right">
-              <img className="some-image" src="http://placehold.it/435x289"/>
-
+              <img className="some-image" src={require('./oil-development.jpg')}/>
               <div className="collaboration-right__content">
                 <h6>COLLABORATION</h6>
                 <h2>Transparency &
