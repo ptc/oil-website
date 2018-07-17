@@ -1,0 +1,12 @@
+@import '../variables';
+
+.imprint {
+  p, li {
+    max-width: unset !important;
+  }
+
+  a {
+    color: #7c5ae8 !important;
+  }
+}
+

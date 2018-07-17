@@ -35,8 +35,9 @@ class Footer extends React.Component {
             <ul>
               <li>Axel Springer SE</li>
               <li>Axel-Springer-Str. 65,<br/> 10888 Berlin</li>
-              <li>+49-30-259178100</li>
               <li><a href="mailto:hello@asideas.de" className="footer__link">hello@asideas.de</a></li>
+            </ul>
+            <ul>
               <li><a href="/imprint" className="footer__link">Impressum &amp; Privacy Policy</a></li>
             </ul>
           </div>
