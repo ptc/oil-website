@@ -42,10 +42,10 @@ class Header extends React.Component {
           <div className="header-content">
             <div className="header-logo">
               <div className="header-logo__image">
-                <img src={require('./logo.svg')}/>
+                <a href="/#header" className="home-link"><img src={require('./logo.svg')}/></a>
               </div>
               <div className="header-logo__text">
-                oil.js
+                <a href="/#header" className="home-link">oil.js</a>
               </div>
             </div>
             <div className="header-menu">
