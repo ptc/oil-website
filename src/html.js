@@ -23,7 +23,7 @@ module.exports = class HTML extends React.Component {
     return (
       <html {...this.props.htmlAttributes}>
       <head>
-        <title>OIL.js - Co</title>
+        <title>OIL.js - Consent Management</title>
 
         <meta charSet="utf-8"/>
         <meta httpEquiv="x-ua-compatible" content="ie=edge"/>
