@@ -1,7 +1,7 @@
 @import './variables';
 
 body {
-  font-family: 'Source Sans Pro', serif;;
+  font-family: 'Source Sans Pro', serif;
 }
 
 img {
@@ -21,10 +21,10 @@ img {
     //padding-left: 1vw;
     //padding-right: 1vw;
 
-    padding: 132px 158px;
+    padding: 20px 158px;
 
     @include breakpoint-desktop-m {
-      padding: 132px 60px;
+      padding: 20px 60px;
     }
 
     @include breakpoint-smartphone {
@@ -83,8 +83,8 @@ img {
   }
 
   p, li {
-    font-size: 18px;
-    font-weight: normal;
+    font-size: 24px;
+    font-weight: 300;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.5;
